@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Denise Chau | UX Design & Research</title>
+
+		<!-- Bootstrap --> 	
+		<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
+
+		<script src="../external-js/modernizr.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxoverlayn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxoverlayn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- /*<style>
+			@import url('https://fonts.googleapis.com/css?family=Arvo|Lato');
+		</style>*/ -->
+
+		<style>
+			html, body {
+				height: 100%;	
+				position: relative;	/*required for scrollspy*/		
+			}
+
+			/*.full-intro-div {
+				min-height: 100%;
+				background-color: black;
+				width: 100%
+			}*/
+			#intro {
+				min-height: 100%;
+				width: 100%;
+				background: url("images/intro-headshot-curves.jpg") no-repeat fixed 57% 30px;
+				-webkit-background-size: cover;
+    			-moz-background-size: cover;
+    			-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			/*.overlay {
+				/* Firefox 3.6 - 15 */
+				/*background: -moz-linear-gradient(rgba(90, 69, 19, 0.1), rgba(0, 0, 0, 0.3));
+				/* Opera 11.1 - 12 */
+				/*background: -o-linear-gradient(rgba(90, 69, 19, 0.1), rgba(0, 0, 0, 0.3));
+				/* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+				/*background: -webkit-linear-gradient(rgba(90, 69, 19, 0.1), rgba(0, 0, 0, 0.3));
+			 	/* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+				/*background: linear-gradient(190deg, rgba(90, 69, 19, 0.1), rgba(0, 0, 0, 0.3));
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}*/
+
+			#work {
+				background: url("images/pattern-blue-purple.svg") no-repeat fixed 0% 0%;
+				-webkit-background-size: cover;
+    			-moz-background-size: cover;
+    			-o-background-size: cover;
+				background-size: cover;
+			}
+			#about-me {
+				background-color: #b4c0de;
+			}
+			.diamond {
+				width: 0;
+				height: 0;
+				border: 50px solid transparent;
+				border-bottom-color: white;
+				position: relative;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			.diamond:before {
+				content: '';
+				position: absolute;
+				left: -50px;
+				top: 50px;
+				width: 0;
+				height: 0;
+				border: 50px solid transparent;
+				border-top-color: white;
+			}
+
+/*			#diamond:after {
+				content: '';
+				position: absolute;
+				left: -100px;
+				top: 0;
+				width: 0;
+				height: 0;
+				border: 50px solid transparent;
+				border-top-color: white;
+				transform: rotate(90deg);
+			}*/
+
+			.row.divider + .row {
+				padding-top: 50px;
+			}	
+			
+		</style>
+	</head>
+	<body>		
+		<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		    <div class="container-fluid">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+		                <span class="sr-only">Toggle navigation</span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a href="#intro" class="navbar-brand">DC</a>
+		        </div>
+		        <!-- Collection of nav links and other content for toggling -->
+		        <div id="navbarCollapse" class="collapse navbar-collapse">
+		            <ul class="nav navbar-nav navbar-right">
+		            	<li><a href="#work">WORK</a></li>
+		                <li><a href="#about-me">ABOUT ME</a></li>
+		                <li><a href="#resume">RESUME</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+
+		<!-- intro -->		
+		<section id="intro">
+			<div class="overlay">
+				<div class="container vertical-offset-intro">
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-sm-offset-1 col-md-offset-1 col-lg-6 col-lg-offset-1">
+							<h1 class="intro-name">My name is <br>Denise Chau.</h1>
+							<h2 class="intro-roles">I am a <span class="typer" data-delay="200" data-words="UX designer., researcher., front-end developer." data-colors="white"></span><span class="cursor" data-owner="first-typer"></span></h2>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</section>
+		
+
+		<!-- work -->
+		<section id="work">
+			<div class="container-fluid">
+				<div class="vertical-spacer"></div>
+
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div id="umap">	<!--ID is not referenced anywhere, worth keeping?-->					
+							<h1>Umap</h1>
+							<div class="row">
+								<div class="col-sm-6 col-md-7 vertical-spacer-sm">
+									<div class="visible-xs">
+										<img src="images/interactive-maps/price-center-east.jpg" class="img-responsive">
+										<div class="img-credit">
+											<small>Erik Jepsen, UC San Diego Publications</small>
+										</div>									
+									</div>
+									<p class="lead">Interactive map kiosks to facilitate navigation around UC San Diego</p>
+									<p>With upwards of 750 buildings sprawled across 1,100 acres, UCSD proves to be a complex space to navigate. At the same time, the campus attracts a variety of people, from well-acquainted locals to first-time visitors. Irrespective of familiarity, well-designed wayfinding resources are crucial to how all users experience the physical space and brand.
+									</p>
+									<button class="btn btn-lg btn-default view-umap-case">View case study</button>
+								</div>
+								<div class="hidden-xs col-sm-6 col-md-5">
+									<img src="images/interactive-maps/price-center-east.jpg" class="img-responsive">
+									<div class="img-credit">
+										<small>Erik Jepsen, UC San Diego Publications</small>
+									</div>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1">
+						<div id="pac-brewing">
+							<h1>Pacific Brewing Co.</h1>
+							<div class="row">
+								<div class="col-sm-6 col-md-7 vertical-spare-sm">
+									<p class="lead">Company website for local brewery</p>
+									<p>Pac brewing intro t mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mo</p>
+									<button class="btn btn-lg btn-primary view-gsu-case">View case study</button>
+								</div>
+								<div class="hidden-xs col-sm-6 col-md-5">
+									<img src="images/pacific-brewing-co/cover.png" class="img-responsive">
+								</div>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+				<div class="vertical-spacer"></div>
+				
+
+				<!-- Case study panels -->
+				<!-- Umap Case Study -->
+				<div class="overlay-panel from-right">
+					<header class="overlay-panel-header">
+						<a href="#" class="overlay-panel-return-to-work hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> Return to work</a>
+						<a href="#" class="overlay-panel-close hidden-xs" title="Close"></a>
+					</header>
+
+					<div class="overlay-panel-container">
+						<div class="overlay-panel-content">
+							<div id="umap-content" class="container-fluid">
+								<div class="row">
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<h1 class="text-center">Umap</h1>
+										<h2>The Challenge</h2>
+										<p>UC San Diego's main campus is a tough space to navigate for students and visitors alike. The area is vast and the built environment is complex. As a result of the university's gradual growth, the dispersal of buildings, departments, and pathways is rather arbitrary.
+										</p>
+										<p>To alleviate issues caused by aforementioned characteristics, we focus on <strong>wayfinding</strong>, information systems designed to guide people through a physical environment and enhance their understanding of a space.
+										</p>
+										<img src="images/interactive-maps/aeriel-campus-cropped-h.jpg" class="img-responsive">
+										<div class="img-credit">
+											<small>Erik Jepsen, UC San Diego Publications</small>
+										</div>					
+										<p class="lead">What's the big deal?</p>
+										<p>Effective wayfinding systems enhance the way people experience space by making them feel <strong>empowered and secure</strong> in unfamiliar, high stress environments. 
+										</p>
+									</div>
+								</div>
+
+								<div class="row divider">
+									<div class="col-sm-12">
+										<div class="diamond"></div>
+									</div>
+								</div>
+
+								<div class="row" style="background: #a3bfc7;">
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<h2>The Discovery</h2>
+										<p>After identifying our general problem statement, we began conducting research to further explore user needs, attitude, and behavior.
+										</p>
+										<p>By the end of our research phase, we will have conducted two distinct rounds. Research efforts were split evenly amongst all nine members of the team.
+										</p>	
+										<h3 class="case-study-subheading">Data Collection: Round One</h3>
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<div class="well">
+													<div class="row">
+														<div class="col-md-7 col-lg-8">
+															<h4 class="panel-body-heading">Objectives</h4>
+															<p>How are resources such as digital maps, physical maps, signage, and verbal instruction used?
+															</p>
+															<p>When do users prefer which medium and why?
+															</p>
+															<p>What user groups prefer which medium? Are certain groups more successful with particular mediums?
+															</p>
+															<p>How have past experiences navigating on campus influenced current attitude and behavior?
+															</p>
+														</div>
+														<div class="col-md-5 col-lg-4">
+															<h4 class="panel-body-heading">Methods</h4>
+															<p>contextual inquiry with participants as they tried navigating to unfamiliar destinations from Library Walk
+															</p>
+															<p>post-task interview about previous use cases or related experiences
+															</p>
+														</div>
+													</div>
+												</div>
+												<h4 class="panel-body-heading">Findings</h4>
+												<ul>
+													<li>most users first search on a mobile Internet browser to see their destination on a map or to read a description of the location</li>
+													<li>if users became confused en route and knew they were in the viscinity of their destination, most then asked a passerby for directions</li>
+													<li>digital resources (maps, department and student service websites) are typically referenced before a trip so users can plan ahead accordingly</li>
+													<li>printed and stationary maps are supplementary at best, but rarely preferred because they lack sufficient details</li>
+													<li>signage with the building name is crucial for users to identify a building confidently</li>
+													<li>wifi and cell service are spotty</li>
+												</ul>
+												<hr>
+												<img src="images/interactive-maps/campus-map-paths.png" class="img-responsive">
+												<div class="img-caption"><small>This map is posted throughout campus and is distributed at well-attended events and offices, yet several major walkways (orange) are omitted</small>
+												</div>
+											</div>
+										</div><!-- panel panel-default -->
+										<p>In our analysis of round one, we noticed that directions to a destination seemed easiest to explain in relation to a nearby landmark in that viscinity, leading us to conduct one more study.</p>
+										<h3 class="case-study-subheading">Data Collection: Round Two</h3>
+										<div class="panel panel-default">
+											<div class="panel-body">
+												<div class="well">
+													<div class="row">
+														<div class="col-md-7 col-lg-8">
+															<h4 class="panel-body-heading">Objectives</h4>
+															<p>What are the most effective ways to explain how to get somewhere, assuming that the starting point is Library Walk?
+															</p>
+															<p>What are the most common landmarks referenced for each college?
+															</p>
+															<p>The western half of campus is on a cardinal grid. Are cardinal points used in explanation?
+															</p>
+														</div>
+														<div class="col-md-5 col-lg-4">
+															<h4 class="panel-body-heading">Methods</h4>
+															<p>asked participants to give directions to 14 locations from Library Walk and recorded their answers; these locations were distributed as evenly as possible (2 in each college, 2 in University Center)
+															</p>
+														</div>
+													</div>
+												</div>
+												<h4 class="panel-body-heading">Findings</h4>
+												<ul>
+													<li>directions often included the college name (UCSD is divided into six distinct colleges) and one or more landmarks</li>
+													<li>it was common for participants to explain the outward appearance of a landmark</li>
+													<li>although half the campus is on a cardinal grid, cardinal points weren't used often</li>
+												</ul>
+												<hr>
+												<img src="images/interactive-maps/data-round-two.jpg" class="img-responsive">
+												<div class="img-caption"><small>Frequently referenced landmarks during data collection round two (middle row)</small>
+												</div>
+											</div>
+										</div><!-- panel panel-default -->
+									</div>
+								</div>
+
+								<div class="row divider" style="background: #a3bfc7;">
+									<div class="col-sm-12">
+										<div class="diamond"></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<h2>The Refinement</h2>
+										<p class="lead">Whew, that was a lot of data. Now what?</p>
+										<div class="row">
+											<div class="col-xs-5">
+												<img src="images/interactive-maps/affinity-group-1.jpg" class="img-responsive">
+											</div>
+											<div class="col-xs-7">
+												<img src="images/interactive-maps/affinity.jpg" class="img-responsive">
+											</div>
+										</div>
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+
+										<p>As all great UX-ers do, we created an affinity diagram to organize and group our findings. These are the <strong>needs and insights we decided to focus on</strong>:</p>
+										<ul>
+											<li>users need a wayfinding resource on campus that does not depend on wifi/cellular data</li>
+											<li>the most effective directions are anchored against nearby landmarks, especially because a long set of directions can be difficult to remember</li>
+											<li>users need just enough detail to determine if their trip is worth making; nobody wants to embark on a 20 minute walk only to realize they've arrived at the wrong building or that the office is closed</li>
+											<li>users need to see an image of the building to be confident that they've arrived at the correct place</li>
+										</ul>
+										<p>We all know how easy it is to become distracted with solving edge cases, so we <strong>created personas to keep us grounded</strong> in realistic use cases.
+										</p>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="thumbnail">
+													<img src="images/interactive-maps/persona-student.jpg" class="img-responsive">
+  													<div class="caption">
+														<h3 class="panel-body-heading">The Busy Student</h3>
+    													<p>Ada is a third year undergrad majoring in Psychology. She lives off campus, works part time at a market on campus and is highly involved in several student associations, including AS Concerts and Events and Kaibigang Pilipin.
+														</p>
+														<p>Ada's main concern is being punctual. Her most common struggles are locating TA section rooms at the start of a quarter and finding meeting rooms for her student organizations.
+														</p>
+														<p>As an activities coordinator for KP, it's not unusual to host events with other KP chapters. In the past, Ada has had a difficult time directing visitors to appropriate parking lots.
+														</p>
+												    </div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="thumbnail">
+													<img src="images/interactive-maps/persona-visitor.jpg" class="img-responsive">
+  													<div class="caption">
+														<h3 class="panel-body-heading">The Occasional Visitor</h3>
+    													<p>Jason is the owner of a used bookstore in Hillcrest. He has a community borrowing card for the UCSD library system and likes to check out the special collections archive for new poetry.
+														</p>
+														<p>On average, Jason visits 3-4 times a year. He typically drives to campus and parks at the Gilman Structure because it's easy to find from the freeway exit. Once on campus, he tends to spend the entire day between the library and dining halls or coffee shops. 
+														</p>
+												    </div>
+												</div>
+											</div>												
+										</div>
+									</div>
+								</div>
+						
+								<div class="row divider">
+									<div class="col-sm-12">
+										<div class="diamond"></div>
+									</div>
+								</div>
+
+								<div class="row" style="background: #a3bfc7;">
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<h2>The Vision</h2>
+										<p class="lead">The intent is to provide touch surface kiosks near major landmarks and walkways throughout campus to assist in the overall planning and execution of travels by foot.
+										</p>
+
+										<h2>The Wireframes</h2>										
+										<img src="images/interactive-maps/wireframe-home.jpg" class="img-responsive">
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+										<div class="row">
+											<div class="col-sm-4 col-lg-5">
+												<p>Spatial orientation can be challenging when you're simultaneously trying to identify buildings around you and remember a set of instructions. <strong>To make matters less complicated, match the user's orientation with that of the map</strong>.</p>
+												<p> For example, if you are facing Geisel Library while using the kiosk, it will appear above you on the map (left). Similarly, if you are facing west, Geisel will be to your left on the map (right). </p>
+											</div>
+											<div class="col-sm-8 col-lg-7">
+												<img src="images/interactive-maps/wireframe-orientation.jpg" class="img-responsive">
+											</div>
+										</div>
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+										<div class="row">
+											<div class="col-sm-3 hidden-xs">
+												<img src="images/interactive-maps/wireframe-dining.jpg" class="img-responsive">
+											</div>
+											<div class="col-sm-9">
+												<img src="images/interactive-maps/wireframe-details.jpg" class="img-responsive">
+											</div>
+										</div>
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+										<p>The course and parking widgets are <strong>reference guides and a navigational tool all at once</strong>.</p>
+										<div class="row">
+											<div class="col-sm-10 col-md-6">
+												<img src="images/interactive-maps/wireframe-courses.jpg" class="img-responsive">
+											</div>
+											<div class="hidden-xs hidden-sm col-md-6">
+												<img src="images/interactive-maps/wireframe-parking.jpg" class="img-responsive">
+											</div>
+										</div>
+										<div class="vertical-spacer-sm vertical-spacer hidden-md hidden-lg">
+										</div>
+										<div class="row hidden-md hidden-lg">
+											<div class="col-sm-10">
+												<img src="images/interactive-maps/wireframe-parking.jpg" class="img-responsive">
+											</div>
+										</div>
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+										<p class="lead">It's the combination of description and imagery that makes Umap a powerful resource.</p>
+										<p>Each set of directions would be given alongside annotated imagery to help <strong>illustrate what the actual journey looks like</strong>. It's an effective way to give directions in a space that has highly unique structures and a lack of naming convention for many walkways. Some examples:
+										</p>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="thumbnail grouped-img-credit">
+													<img src="images/interactive-maps/warren-lec-hall-annotated.jpg" class="img-responsive">
+													<div class="caption">
+														<p>walk toward Geisel and turn left into alley next to Fairbanks coffee</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="thumbnail grouped-img-credit">
+													<img src="images/interactive-maps/conrad-prebys-annotated.jpg" class="img-responsive">
+													<div class="caption">
+														<p>continue straight then turn right into Conrad Prebys main entrance</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="img-credit"><small>Photos by Erik Jepsen, UC San Diego Publications</small>
+										</div>
+										<img src="images/interactive-maps/wireframe-directions.jpg" class="img-responsive">
+										<div class="vertical-spacer-sm vertical-spacer">
+										</div>
+
+										<h2>Physical Considerations</h2>
+										<p>Digital screens tend to be hard to see in direct sunlight and San Diego is indeed a <i>very</i> sunny place. It'd be best if the kiosk provided shade for the screen and perhaps the user as well.
+										</p>
+										<p>The screen's angle and height should be adjustable to make it more accessible for those with a handicap.
+										</p>
+									</div>
+								</div>
+								
+								<div class="row divider" style="background: #a3bfc7;">
+									<div class="col-sm-12">
+										<div class="diamond"></div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+										<h2>Closing Thoughts</h2>
+										<h3 class="case-study-subheading">On Experimental Design</h3>
+										<p>Define very specific <i>everything</i> &mdash; hypotheses, methods, and measures &mdash; to collect comparable and actionable data.
+										</p>
+										<p>It's imperative that research experiments are <strong>executed consistently</strong> to promote measurability. In part, this circles back to my "specific everything" point but also to delegating tasks responsibly and leaving research up to a small number of teammates. Each researcher has a subtly different style in speaking, gesturing, and overall interaction. With fewer researchers, there's less variability in how methods are carried out, especially when the method itself is open-ended, as is with contextual inquiry and ethnographic observation.
+										</p>
+										
+										<h3 class="case-study-subheading">On Collaboration</h3>
+										<p>The team became more effective once we broke out into smaller groups working toward specific deliverables and goals. I noticed that the level of engagement had risen, along with accountability and overall morale. My takeaway is that it's crucial to keep the goals focused and achievable so everyone feels one step closer to an end product after each small victory.
+										</p>
+
+										<h3 class="case-study-subheading">On My Contribution</h3>
+										<p>I conducted user reseearch 
+											We all built affinity and talked about results
+											I built a paper prototype and tested with two users
+											Meeting logistics, planning, communication (these are our goals, come ready to talk about this given topic, led a meeting or two)
+											made sure we were on schedule, meeting our deliverables in reaonable time
+										</p>
+									
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
+										<hr>
+									</div>
+								</div>
+							</div><!-- container-fluid -->	
+
+							<!--GSU Case Study-->
+							<div id="gsu-content" class="container-fluid">
+								<h1>Project 2</h1>
+								<p>
+									People gesture when talking about physical structure, texture, shape, movement, speed. Speech alone isn't concise enough, so we rely on language paired with gesture. 
+								</p>
+								<p> The intent is to data as rich as possible. Then researcher use intuitive brain to do some qualitative analysis. Ethnographer looks at nuances and sees if theres an opportunity for innovation. 
+									video allows you to see knowledge people wouldn't think to articulate
+									It's oftentimes nuances such as these that allow us to better understand the world that our users live in.
+									Useful for seeing how people interact with space. 
+									Useful if we're doing research in other ethnic cultures. In particular, spoken language can affect how we think to gesture. 
+									gesture and speech = expose mental models
+									Implications for design? As we move towards an era of automation for many manufacturing and some farming and construction jobs, an end user still has to operate those machines. 
+									somebody needs to study gestures </p>
+							</div>						
+						</div> <!-- overlay-panel-content -->
+					</div> <!-- overlay-panel-container -->
+				</div> <!-- overlay-panel -->
+
+
+			</div> <!-- container-fluid -->			
+		</section>
+		<hr>
+
+		<!-- about me -->
+		<section id="about-me">
+			<h1>About Me</h1>
+			<p class="lead">Lead paragraph text</p>
+			<span>span text span text</span>
+			<h1>H1 Hello, world!</h1>
+			<h2>H2 Hello, world!</h2>
+			<h3>H3 Hello, world!</h3>		
+			<h4>H4 Hello, world!</h4>
+			<p><i>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</i></p>
+			<p>It's easy to say yes to a job, but success for me is intrinsically linked with delivery. I work very hard to ensure that my products and designs are technically feasible and that they add value to customers lives, as well as to business revenue. The products we make should matter enough to be launched, or we shouldn't make them.</p>
+			<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+			<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+		</section>
+		<hr>
+		<!--resume-->
+		<section id="resume">
+			<h1>Resume Download</h1>
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+				<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+				</div>
+			</div>
+			<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+			<p>Vestibulum pellentesque ultricies odio, sit amet vulputate turpis efficitur quis. Nam sed ipsum sit amet nisl facilisis dapibus ac id libero. In feugiat mi pharetra augue porttitor sodales. In eget risus massa. Curabitur sagittis laoreet sem. Phasellus finibus mollis dolor sit amet congue. Nullam metus nibh, mollis in ex eu, posuere eleifend elit. In sit amet sapien quam. Fusce sed sapien iaculis, malesuada tortor in, tempus velit. Aenean finibus malesuada tellus eget sollicitudin.</p>
+		</section>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="dist/js/bootstrap.min.js"></script>
+		<script src="../external-js/typer.js"></script>
+		<script src="../external-js/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript">			
+		// Apply nav offset upon scroll and click
+		$('body').scrollspy({
+			target: '#navbarCollapse',
+			offset:65
+		});
+		
+		$('#navbarCollapse .nav li > a').click(function(){
+			$('body').scrollTo($(this).attr('href'),
+				{duration:600, offset:-60});
+		});
+		$('.navbar-header > a').click(function(){
+			$('body').scrollTo($(this).attr('href'),
+				{duration:600, offset:-60});
+		});
+
+		// Work 
+		$(document).ready(function($){
+			$('#gsu-content, #umap-content').hide();				
+
+			//open the lateral panel
+			$('.view-umap-case').on('click', function(event){
+				event.preventDefault();
+
+				$('#umap-content').show();
+				$('#gsu-content').hide;
+
+				$('.overlay-panel-content').scrollTop(0);
+				$('.overlay-panel').addClass('is-visible');
+				$('body').addClass('disable-scroll');
+				//buddy fix for issue with position absolute
+				// setTimeout (function (){
+				// 	$('#intro > div').removeClass('overlay');
+				// 	}, 2000);
+
+			});
+
+			$('.view-gsu-case').on('click', function(event){
+				event.preventDefault();
+
+				$('#gsu-content').show();
+				$('#umap-content').hide();
+
+				$('overlay-panel-content').scrollTop(0);
+				$('.overlay-panel').addClass('is-visible');
+				$('body').addClass('disable-scroll');
+				//buddy fix for issue with position absolute
+				// setTimeout (function (){
+				// 	$('#intro > div').removeClass('overlay');
+				// 	}, 2000);
+			});
+
+			//close the lateral panel
+			$('.overlay-panel').on('click', function(event){
+				if( $(event.target).is('.overlay-panel') || $(event.target).is('.overlay-panel-close') ) { 
+					$('.overlay-panel').removeClass('is-visible');
+					$('body').removeClass('disable-scroll');
+					$('#gsu-content, #umap-content').fadeOut();				
+
+					event.preventDefault();	
+				}
+			});
+
+			// close panel in mobile
+			$('.overlay-panel').on('click', function(event){
+				if( $(event.target).is('.overlay-panel') || $(event.target).is('.overlay-panel-return-to-work') ) { 
+					$('.overlay-panel').removeClass('is-visible');
+					$('body').removeClass('disable-scroll');
+					$('#gsu-content, #umap-content').fadeOut();				
+
+					event.preventDefault();
+				}
+			});
+		});
+		</script>
+	</body>
+</html>
