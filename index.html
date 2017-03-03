@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
 
-		<script src="/external-js/modernizr.js"></script>
+		<script src="external-js/modernizr.js"></script>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,15 +31,18 @@
 				position: relative;	/*required for scrollspy*/		
 			}
 
-			/*.full-intro-div {
+/*			.full-intro-div {
 				min-height: 100%;
-				background-color: black;
+				background: #6d919e;
 				width: 100%
 			}*/
 			#intro {
 				min-height: 100%;
 				width: 100%;
-				background: url("images/intro-headshot-curves.jpg") no-repeat fixed 57% 30px;
+				background: #6d919e;
+				background-image: url("images/intro-headshot-curves.jpg");
+				background-repeat: no-repeat; 
+				background-position: 57% 30px;
 				-webkit-background-size: cover;
     			-moz-background-size: cover;
     			-o-background-size: cover;
@@ -441,14 +444,14 @@
 										<div class="vertical-spacer-sm vertical-spacer">
 										</div>
 										<p class="lead">It's the combination of description and imagery that makes Umap a powerful resource.</p>
-										<p>Each set of directions would be given alongside annotated imagery to help <strong>illustrate what the actual journey looks like</strong>. It's an effective way to give directions in a space that has highly unique structures and a lack of naming convention for many walkways. Some examples:
+										<p>Each set of directions would be given alongside annotated imagery to help <strong>illustrate what the actual journey looks like</strong>. It's an effective way to give directions in a space that has highly unique structures and unnamed walkways. Some examples:
 										</p>
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="thumbnail grouped-img-credit">
 													<img src="images/interactive-maps/warren-lec-hall-annotated.jpg" class="img-responsive">
 													<div class="caption">
-														<p>walk toward Geisel and turn left into alley next to Fairbanks coffee</p>
+														<p>walk toward Geisel and turn left into the alley adjacent to Fairbanks coffee</p>
 													</div>
 												</div>
 											</div>
@@ -583,8 +586,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="dist/js/bootstrap.min.js"></script>
-		<script src="/external-js/typer.js"></script>
-		<script src="/external-js/jquery.scrollTo.min.js"></script>
+		<script src="external-js/typer.js"></script>
+		<script src="external-js/jquery.scrollTo.min.js"></script>
 		<script type="text/javascript">			
 		// Apply nav offset upon scroll and click
 		$('body').scrollspy({
