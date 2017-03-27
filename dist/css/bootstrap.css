@@ -6225,18 +6225,6 @@ body {
   height: 100%;
   /*required for scrollspy*/
 }
-#intro {
-  position: relative;
-  min-height: 100%;
-  /*width: 100%;*/
-  background: #bfbfbf;
-  background-image: url("../../images/intro-headshot-curves.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 57% 30px;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
 /*. conflicts with the overlay-panel appearance and functionality
 overlay {
   background-color: rgba(0,0,0,0.5);
@@ -6247,26 +6235,6 @@ overlay {
   left: 0;
   right: 0;
 }*/
-#work {
-  background: #b2cae2;
-  background-image: url("../../images/pattern-blue-purple.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 15% 0;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-#about-me {
-  min-height: 100%;
-  background: #d4d7db;
-  background-image: url("../../images/white-room-portrait-notext.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 38% 30px;
-  -webkit-background-size: cover;
-          background-size: cover;
-  /*width: 100%;*/
-}
 #resume {
   background: #bfbfbf;
 }
