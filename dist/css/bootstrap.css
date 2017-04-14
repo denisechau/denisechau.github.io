@@ -4260,18 +4260,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #171835;
 }
 .navbar-default .navbar-brand {
-  color: #b5bfdc;
+  color: #cedde9;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #92a1cc;
+  color: #abc5d9;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #b5bfdc;
+  color: #cedde9;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4312,7 +4312,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #b5bfdc;
+    color: #cedde9;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4333,13 +4333,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #b5bfdc;
+  color: #cedde9;
 }
 .navbar-default .navbar-link:hover {
   color: #fff;
 }
 .navbar-default .btn-link {
-  color: #b5bfdc;
+  color: #cedde9;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
@@ -6144,7 +6144,7 @@ button.close {
   border-color: #171835;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #b5bfdc;
+  color: #cedde9;
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #fff;
@@ -6164,7 +6164,7 @@ button.close {
   }
 }
 .navbar-default .navbar-nav > li > a:focus {
-  color: #b5bfdc;
+  color: #cedde9;
   background-color: transparent;
 }
 @media (min-width: 992px) {
@@ -6236,7 +6236,10 @@ overlay {
   right: 0;
 }*/
 #resume {
-  background: #bfbfbf;
+  background: #cedde9;
+}
+#footer {
+  background: #fff;
 }
 @media (min-width: 768px) {
   .vertical-spacer {
@@ -6256,7 +6259,7 @@ overlay {
 }
 .intro-name,
 .intro-roles {
-  color: #21234c;
+  color: #331846;
 }
 @media (max-width: 767px) {
   .vertical-offset-intro {
@@ -6412,10 +6415,6 @@ overlay {
   font-family: "Sintony", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   color: inherit;
-}
-.gesture-examples .thumbnail {
-  background-color: #f7ffe8;
-  border: 1px solid #eeffce;
 }
 /*--------------------------------
 // Slide In Panel
@@ -6667,7 +6666,7 @@ Main components
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: #90a5ab;
+  background: #a09898;
   -webkit-transition-delay: .3s;
        -o-transition-delay: .3s;
           transition-delay: .3s;
