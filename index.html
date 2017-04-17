@@ -37,8 +37,7 @@
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
 		  background-size: cover;
-		  background-attachment: fixed;
-		  /*position: relative;*/
+		  /*do not put bg att fixed, will cause issue with resizing intro bg properly, less of an issue for svg in works*/
 		  min-height: 100%;
 		  width: 100%;
 		}
@@ -60,7 +59,7 @@
 		  background: #D4D7DB;
 		  background-image: url("images/white-room-portrait-notext.jpg");
 		  background-repeat: no-repeat;
-		  background-position: 38% 30px;
+		  background-position: left top;
 		  -webkit-background-size: cover;
 		  -moz-background-size: cover;
 		  -o-background-size: cover;
