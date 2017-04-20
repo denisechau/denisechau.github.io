@@ -6229,6 +6229,35 @@ overlay {
   left: 0;
   right: 0;
 }*/
+#about-me {
+  width: 100%;
+  min-height: 100%;
+  background: #d4d7db;
+  background-image: url("../../images/white-room-portrait-notext.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+@media (max-width: 767px) {
+  #about-me {
+    background-position: 11% top;
+  }
+}
+@media (min-width: 768px) {
+  #about-me {
+    background-position: 30% top;
+  }
+}
+@media (min-width: 992px) {
+  #about-me {
+    background-position: 25% top;
+  }
+}
+@media (min-width: 1199px) {
+  #about-me {
+    background-position: left top;
+  }
+}
 #resume {
   background: #cedde9;
 }
@@ -6263,7 +6292,7 @@ overlay {
   .intro-roles {
     margin-top: 16px;
     margin-bottom: 8px;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
 }
 @media (min-width: 768px) {
@@ -6742,11 +6771,13 @@ Main components
   background: rgba(255, 255, 255, .4);
   border: 1px solid white;
 }
-.masonry-content p:last-child {
+.masonry-content p:last-child,
+.masonry-content p.last,
+.masonry-content p.lead {
   margin-bottom: 0;
 }
 .social-icon {
-  padding: 0 8px 0 8px;
+  padding: 0 10px 0 10px;
 }
 @media (min-width: 1400px) {
   .social-icon {
