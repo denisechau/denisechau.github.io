@@ -6234,7 +6234,7 @@ overlay {
   /*do not put bg att fixed, will cause issue with resizing intro bg properly, less of an issue for svg in works*/
   min-height: 100%;
   background: #bfbfbf;
-  background-image: url("../../images/white-room-portrait-notext.jpg");
+  background-image: url("../../images/white-room-portrait-overlay-brown.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -6272,7 +6272,7 @@ overlay {
 #about-me {
   width: 100%;
   min-height: 100%;
-  background: #d4d7db;
+  background: #c3c6c9;
   background-image: url("../../images/circuit-board.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -6302,7 +6302,7 @@ overlay {
 }
 .intro-name,
 .intro-roles {
-  color: #8b8192;
+  color: #fff;
   opacity: 0;
 }
 @media (max-width: 767px) {
@@ -6338,7 +6338,7 @@ overlay {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .vertical-offset-intro {
-    top: 190px;
+    top: 200px;
   }
   .intro-name {
     font-weight: 600;
@@ -6350,7 +6350,7 @@ overlay {
 }
 @media (min-width: 1400px) {
   .vertical-offset-intro {
-    top: 250px;
+    top: 270px;
   }
   .intro-name {
     font-weight: 600;
@@ -6789,7 +6789,7 @@ Main components
 }
 .masonry-content {
   padding: 15px 15px;
-  background: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255, .65);
   border: 1px solid white;
 }
 .masonry-content p:last-child,
