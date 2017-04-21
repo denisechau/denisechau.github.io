@@ -6275,8 +6275,6 @@ overlay {
   background: #d4d7db;
   background-image: url("../../images/circuit-board.svg");
   background-repeat: no-repeat;
-  /*mobile doesn't support bg attachment fixed but desktop does*/
-  background-attachment: fixed;
   -webkit-background-size: cover;
           background-size: cover;
 }
