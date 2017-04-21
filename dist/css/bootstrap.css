@@ -6229,34 +6229,56 @@ overlay {
   left: 0;
   right: 0;
 }*/
-#about-me {
+#intro {
   width: 100%;
+  /*do not put bg att fixed, will cause issue with resizing intro bg properly, less of an issue for svg in works*/
   min-height: 100%;
-  background: #d4d7db;
+  background: #bfbfbf;
   background-image: url("../../images/white-room-portrait-notext.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
 }
 @media (max-width: 767px) {
-  #about-me {
-    background-position: 11% top;
+  #intro {
+    background-position: 38% 45px;
   }
 }
 @media (min-width: 768px) {
-  #about-me {
-    background-position: 30% top;
+  #intro {
+    background-position: 30% 45px;
   }
 }
 @media (min-width: 992px) {
-  #about-me {
-    background-position: 25% top;
+  #intro {
+    background-position: 26% 45px;
   }
 }
 @media (min-width: 1199px) {
-  #about-me {
-    background-position: left top;
+  #intro {
+    background-position: left 45px;
   }
+}
+#work {
+  background: #b2cae2;
+  background-image: url("../../images/pattern-blue-purple.svg");
+  background-repeat: no-repeat;
+  /*mobile doesn't support bg attachment fixed but desktop does*/
+  background-attachment: fixed;
+  background-position: 15% 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+#about-me {
+  width: 100%;
+  min-height: 100%;
+  background: #d4d7db;
+  background-image: url("../../images/circuit-board.svg");
+  background-repeat: no-repeat;
+  /*mobile doesn't support bg attachment fixed but desktop does*/
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 #resume {
   background: #cedde9;
@@ -6282,7 +6304,8 @@ overlay {
 }
 .intro-name,
 .intro-roles {
-  color: #331846;
+  color: #8b8192;
+  opacity: 0;
 }
 @media (max-width: 767px) {
   .vertical-offset-intro {
