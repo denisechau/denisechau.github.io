@@ -28,33 +28,6 @@
 		  position: relative; /*required for scrollspy*/    
 		}
 
-		#intro {		  
-		  background: #bfbfbf;
-		  background-image: url("images/intro-headshot-curves-overlay.jpg");
-		  background-repeat: no-repeat; 
-		  background-position: 57% 30px;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		  /*do not put bg att fixed, will cause issue with resizing intro bg properly, less of an issue for svg in works*/
-		  min-height: 100%;
-		  width: 100%;
-		}
-
-		#work {
-		  background: #b2cae2;
-		  background-image: url("images/pattern-blue-purple.svg"); 
-		  background-repeat: no-repeat;
-		  background-position: 15% 0%;
-		  -webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
-		  /*mobile doesn't support bg attachment fixed but desktop does*/
-		  background-attachment: fixed;
-		}
-
 		</style>
 	</head>
 	<body>		
@@ -848,6 +821,15 @@
 			$('body').scrollTo($(this).attr('href'),
 				{duration:600, offset:-60});
 		});
+
+		// Fade in intro text
+		$(window).load(function () {
+			$('.intro-name').fadeTo(1200, 1.0);
+			$('.intro-roles').fadeTo(2500, 1.0);
+
+		});
+
+		
 		
 		// Scroll Animation
 		var $animation_elements = $('.animation-element');
