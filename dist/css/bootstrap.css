@@ -6139,6 +6139,15 @@ button.close {
     margin-left: 0;
   }
 }
+.navbar-brand > img {
+  position: relative;
+  bottom: 7px;
+  height: 38px;
+  opacity: .9;
+}
+.navbar-brand > img:hover {
+  opacity: 1.0;
+}
 .navbar-default {
   background-color: #21234c;
   border-color: #171835;
@@ -6282,7 +6291,7 @@ overlay {
   background: #cedde9;
 }
 #footer {
-  background: #fff;
+  background: #c3c6c9;
 }
 @media (min-width: 768px) {
   .vertical-spacer {
@@ -6793,7 +6802,6 @@ Main components
   border: 1px solid white;
 }
 .masonry-content p:last-child,
-.masonry-content p.last,
 .masonry-content p.lead {
   margin-bottom: 0;
 }
