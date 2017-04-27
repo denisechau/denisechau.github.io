@@ -61,7 +61,7 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-offset-1 col-lg-offset-2 col-xl-5">
 						<h1 class="intro-name">Hello, my name is Denise Chau.</h1>
-						<h2 class="intro-roles">I am a <span class="typer" data-delay="200" data-words="UX designer., researcher., front-end developer." data-colors="#97929c"></span><span class="cursor" data-owner="first-typer"></span></h2>
+						<h2 class="intro-roles">I am a <span class="typer" data-delay="150" data-deleteDelay="2500" data-words="UX designer., researcher., front-end developer." data-colors="#97929c"></span><span class="cursor" data-owner="first-typer"></span></h2>
 					</div>
 				</div>
 			</div>	
@@ -149,7 +149,7 @@
 						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 							<h1>About Me</h1>
 							<div class="masonry-layout">
-								<div class="masonry-panel">
+								<div class="masonry-panel animation-element slide-up">
 									<div class="masonry-content">
 										<p class="lead hidden-xs">My name is Denise Chau. I'm a UX designer and researcher who dabbles in front-end development. I suppose you can call me a UX generalist with strengths in conducting research and building interactive prototypes.
 										</p>
@@ -157,7 +157,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="masonry-panel">
+								<div class="masonry-panel animation-element slide-up">
 									<div class="masonry-content">
 										<p>I received a B.S. from UCSD in Cognitive Science with an emphasis in HCI. It was here that I began my practice as a researcher and formed the habit of putting a healthy dose of skepticism to use.
 										</p> 
@@ -165,7 +165,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="masonry-panel">
+								<div class="masonry-panel animation-element slide-up">
 									<div class="masonry-content">
 										<p>Another aspect at the core of my career is a longtime fascination with how cultural identity (i.e. the feeling of belonging to a group) is formed, projected, and received.
 										</p>
@@ -176,7 +176,7 @@
 										<p>Informally, I like studying subculture around music genre. I'm keen on picking apart how events in history shape the meaning and value that followers find in a subculture.</p>
 									</div>
 								</div>
-								<div class="masonry-panel">
+								<div class="masonry-panel animation-element slide-up">
 									<div class="masonry-content">
 										<p>In my me time, I engage in activities that allow me to cultivate a few habits&mdash;discipline, tolerance, and kindness. To name a few, I practice yoga, I shoot pool, I attend a ton of music shows, and I spend a great deal of time outside, but we can discuss those matters another time.
 										</p>
@@ -820,16 +820,14 @@
 				{duration:600, offset:-60});
 		});
 
-		// Fade in intro text
+		// Fade in intro roles
 		$(window).load(function () {
-			$('.intro-name').fadeTo(1200, 1.0);
+			$('.intro-name').fadeTo(500, 1.0);
 			$('.intro-roles').fadeTo(2500, 1.0);
-
 		});
-
 		
 		
-		// Scroll Animation
+		// Scroll Animation for Work
 		var $animation_elements = $('.animation-element');
 		var $window = $(window);
 
@@ -849,7 +847,7 @@
 			        (element_top_position <= window_bottom_position)) {
 			      $element.addClass('in-view');
 			    } else {
-			      $element.removeClass('in-view');
+			      // $element.removeClass('in-view');
 			    }
 		  	});
 		}
@@ -870,11 +868,6 @@
 
 				$('.overlay-panel-content').scrollTop(0);
 				$('.overlay-panel').addClass('is-visible');
-				$('body').addClass('disable-scroll');
-				//buddy fix for issue with position absolute
-				// setTimeout (function (){
-				// 	$('#intro > div').removeClass('overlay');
-				// 	}, 2000);
 			});
 
 			$('.view-ecology-case').on('click', function(event){
@@ -886,10 +879,6 @@
 				$('overlay-panel-content').scrollTop(0);
 				$('.overlay-panel').addClass('is-visible');
 				$('body').addClass('disable-scroll');
-				//buddy fix for issue with position absolute
-				// setTimeout (function (){
-				// 	$('#intro > div').removeClass('overlay');
-				// 	}, 2000);
 			});
 
 			//close the lateral panel
