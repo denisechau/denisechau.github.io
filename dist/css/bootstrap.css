@@ -6280,8 +6280,7 @@ overlay {
 }
 #about-me {
   width: 100%;
-  min-height: 100%;
-  background: #c3c6c9;
+  background: #a4aeb9;
   background-image: url("../../images/circuit-board.svg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -6291,7 +6290,7 @@ overlay {
   background: #cedde9;
 }
 #footer {
-  background: #c3c6c9;
+  background: #cedde9;
 }
 @media (min-width: 768px) {
   .vertical-spacer {
@@ -6768,15 +6767,18 @@ Main components
 /*--------------------------------
 // About Me
 ---------------------------------*/
+#about-me h1:first-child {
+  color: #21234c;
+}
 .animation-element.slide-up {
   opacity: 0;
   -webkit-transition: all 500ms ease-out;
        -o-transition: all 500ms ease-out;
           transition: all 500ms ease-out;
-  -webkit-transform: translate3d(0px, 50px, 0px);
-      -ms-transform: translate(0px, 50px);
-       -o-transform: translate(0px, 50px);
-          transform: translate3d(0px, 50px, 0px);
+  -webkit-transform: translate3d(0px, 60px, 0px);
+      -ms-transform: translate(0px, 60px);
+       -o-transform: translate(0px, 60px);
+          transform: translate3d(0px, 60px, 0px);
 }
 .animation-element.slide-up.in-view {
   opacity: 1;
@@ -6815,7 +6817,7 @@ Main components
 }
 .masonry-content {
   padding: 15px 15px;
-  background: rgba(255, 255, 255, .65);
+  background: rgba(255, 255, 255, .8);
   border: 1px solid white;
 }
 .masonry-content p:last-child,
@@ -6823,18 +6825,54 @@ Main components
   margin-bottom: 0;
 }
 .social-icon {
-  padding: 0 10px 0 10px;
+  padding: 0 20px 0 20px;
 }
-@media (min-width: 1400px) {
-  .social-icon {
-    opacity: .7;
-  }
-  .social-icon:hover {
-    opacity: 1;
-  }
-  .social-icon > img:hover {
-    -webkit-transform: scale3d(1.07, 1.07, 1);
-            transform: scale3d(1.07, 1.07, 1);
-  }
+.social-icon img {
+  height: 70px;
+}
+.no-touch .social-icon > img.animation-element:hover {
+  border-radius: 100px;
+  -webkit-box-shadow: 2px 3px rgba(0, 0, 0, .3);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, .4);
+  -webkit-transform: scale(1.08, 1.08);
+      -ms-transform: scale(1.08, 1.08);
+       -o-transform: scale(1.08, 1.08);
+          transform: scale(1.08, 1.08);
+
+       -o-box-shadow: 2px 3px rgba(0, 0, 0, .3);
+}
+.animation-element.rotate-clockwise {
+  opacity: 0;
+  -webkit-transition: all 700ms ease-out;
+       -o-transition: all 700ms ease-out;
+          transition: all 700ms ease-out;
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+       -o-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+.animation-element.rotate-clockwise.in-view {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.animation-element.rotate-counterclockwise {
+  opacity: 0;
+  -webkit-transition: all 700ms ease-out;
+       -o-transition: all 700ms ease-out;
+          transition: all 700ms ease-out;
+  -webkit-transform: rotate(50deg);
+      -ms-transform: rotate(50deg);
+       -o-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+.animation-element.rotate-counterclockwise.in-view {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+       -o-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 /*# sourceMappingURL=bootstrap.css.map */

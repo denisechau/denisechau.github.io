@@ -26,7 +26,7 @@
 		html, body {
 		  height: 100%; 
 		  position: relative; /*required for scrollspy*/    
-		}	
+		}
 
 		</style>
 	</head>
@@ -120,13 +120,35 @@
 							<hr>
 						</div>
 					</div>
+					<!-- <div class="row animation-element fade-in">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+							<h1>SPIN Project</h1>
+							<p class="lead">Helping researchers collect experimental data and manage subject records</p>
+							<div class="row">
+								<div class="col-sm-6">					
+									<p>Associate project scientist Tom Urbach and his research team needed a tool to assist in their long-term research efforts. As the research project progressed, paper-based data collection became increasingly unsustainable, data entry was inefficient, and there were a number of automatable processes that would cut the researcher team some slack.
+									</p>
+									<a class="btn btn-lg btn-primary" href="https://xd.adobe.com/view/428c99e6-e9cf-4244-b239-d4cc1c1c9713/" target="_blank">View prototype</a>
+								</div>
+								<div class="col-sm-6">
+									<p>present and collect data, schedule experiments, and manage subject records
+										helps experimenter track what subjects need to be brought in for participation
+									</p>
+									<p>The UI lessens the burden for subjects to memorize instructions</p>
+									
+									
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div> -->
 					<div class="row animation-element fade-in">
 						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 							<h1>Project M</h1>
 							<p class="lead">Training management and readiness reporting for Marine Corps aviation operations</p>
 							<div class="row">
 								<div class="col-sm-6">
-									<p>I pioneered UX design and research efforts on a team that supports progress tracking, resource management, and readiness reporting for Marine Corps aviation operations. Broadly speaking, our system provided data to inform decision-making at various levels.</p>
+									<p>I pioneered UX design and research efforts on a team that supports progress tracking, resource management, and readiness reporting for Marine Corps aviation operations. Broadly speaking, our system provides data to inform decision-making at various levels.</p>
 									<p> UX touched nearly every part of the development lifecycle, from requirements analysis to implementation. As a result, I worked closely alongside teammates from numerous disciplines, including development, quality assurance, product management, and customer support.</p>
 								</div>
 								<div class="col-sm-6">
@@ -183,21 +205,25 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
 							<div class="text-center">
-								<a href="https://www.linkedin.com/in/dtchau" target="_blank" class="social-icon"><img src="images/icon-linkedin-circle.png"></a>
-								<a href="https://www.instagram.com/deniseisdown" target="_blank" class="social-icon"><img src="images/icon-instagram-circle.png"></a>
+								<a href="https://www.linkedin.com/in/dtchau" target="_blank" class="social-icon"><img src="images/icon-linkedin-filled-circle.svg" class="animation-element rotate-clockwise"></a>
+								<a href="https://www.instagram.com/deniseisdown" target="_blank" class="social-icon"><img src="images/icon-instagram-filled-circle.svg" class="animation-element rotate-counterclockwise"></a>
 							</div>
-							<!-- <p>A few philosophies that are dear to me: everything in moderation</p>
-							<p>How I spend my time outside of work: hobbies, future hobbies</p>
-							<p>concepts that marinate in my head</p>
-							<p>Favorite topics of discussion</p>
-							<p>dictionary metaphor. define denise chau. synonyms, related concepts, origin/etymology. examples in a sentence. defined for employers vs acquaintances (diff user groups).</p> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+			<!-- <p>A few philosophies that are dear to me: everything in moderation</p>
+				<p>How I spend my time outside of work: hobbies, future hobbies</p>
+				<p>concepts that marinate in my head</p>
+				<p>Favorite topics of discussion</p>
+				<p>dictionary metaphor. define denise chau. synonyms, related concepts, origin/etymology. examples in a sentence. defined for employers vs acquaintances (diff user groups).</p> -->
 
 		<!--resume-->
 		<section id="resume">
@@ -822,7 +848,7 @@
 
 		// Fade in intro roles
 		$(window).load(function () {
-			$('.intro-name').fadeTo(500, 1.0);
+			$('.intro-name').fadeTo(200, 1.0);
 			$('.intro-roles').fadeTo(2500, 1.0);
 		});
 		
@@ -847,6 +873,7 @@
 			        (element_top_position <= window_bottom_position)) {
 			      $element.addClass('in-view');
 			    } else {
+			      // only if we want animation whenever is visible (e.g. on scroll up and down every time)
 			      // $element.removeClass('in-view');
 			    }
 		  	});
@@ -868,6 +895,8 @@
 
 				$('.overlay-panel-content').scrollTop(0);
 				$('.overlay-panel').addClass('is-visible');
+				$('body').addClass('disable-scroll');
+
 			});
 
 			$('.view-ecology-case').on('click', function(event){
