@@ -6879,4 +6879,10 @@ Main components
        -o-transform: rotate(0deg);
           transform: rotate(0deg);
 }
+/*--------------------------------
+// Resume
+---------------------------------*/
+.footer-spacer {
+  margin: 20px 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */
