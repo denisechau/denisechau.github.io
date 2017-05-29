@@ -6139,6 +6139,10 @@ button.close {
     margin-left: 0;
   }
 }
+.btn {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
 .navbar-brand > img {
   position: relative;
   bottom: 7px;
@@ -6718,7 +6722,7 @@ Main components
   z-index: 1;
   width: 100%;
   height: 100%;
-  background: #a09898;
+  background: #9c92a2;
   -webkit-transition-delay: .3s;
        -o-transition-delay: .3s;
           transition-delay: .3s;
@@ -6829,17 +6833,17 @@ Main components
 }
 .social-icon img {
   height: 70px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .4);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, .4);
+
+       -o-box-shadow: 0 3px 8px rgba(0, 0, 0, .4);
 }
 .no-touch .social-icon > img.animation-element:hover {
-  border-radius: 100px;
-  -webkit-box-shadow: 2px 3px rgba(0, 0, 0, .3);
-          box-shadow: 0 3px 8px rgba(0, 0, 0, .4);
   -webkit-transform: scale(1.08, 1.08);
       -ms-transform: scale(1.08, 1.08);
        -o-transform: scale(1.08, 1.08);
           transform: scale(1.08, 1.08);
-
-       -o-box-shadow: 2px 3px rgba(0, 0, 0, .3);
 }
 .animation-element.rotate-clockwise {
   opacity: 0;
