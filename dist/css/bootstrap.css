@@ -4256,33 +4256,33 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #21234c;
-  border-color: #171835;
+  background-color: #333;
+  border-color: #252525;
 }
 .navbar-default .navbar-brand {
-  color: #cedde9;
+  color: #fff;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #abc5d9;
+  color: #e6e6e6;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #fff;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #cedde9;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #cadbea;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #171835;
+  color: #cadbea;
+  background-color: #222;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4302,28 +4302,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #171835;
+  border-color: #252525;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #fff;
-  background-color: #171835;
+  color: #cadbea;
+  background-color: #222;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #cedde9;
+    color: #fff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #fff;
+    color: #cadbea;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #fff;
-    background-color: #171835;
+    color: #cadbea;
+    background-color: #222;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4333,17 +4333,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #cedde9;
-}
-.navbar-default .navbar-link:hover {
   color: #fff;
 }
+.navbar-default .navbar-link:hover {
+  color: #cadbea;
+}
 .navbar-default .btn-link {
-  color: #cedde9;
+  color: #fff;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #fff;
+  color: #cadbea;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
@@ -6153,21 +6153,21 @@ button.close {
   opacity: 1.0;
 }
 .navbar-default {
-  background-color: #21234c;
-  border-color: #171835;
+  background-color: #333;
+  border-color: #252525;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #cedde9;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
+  color: #cadbea;
   background-color: transparent;
 }
 @media (max-width: 991px) {
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
-    color: #fff;
-    background-color: #171835;
+    color: #cadbea;
+    background-color: #222;
   }
 }
 @media (min-width: 992px) {
@@ -6177,12 +6177,12 @@ button.close {
   }
 }
 .navbar-default .navbar-nav > li > a:focus {
-  color: #cedde9;
+  color: #fff;
   background-color: transparent;
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
+    color: #cadbea;
     background-color: transparent;
   }
 }
@@ -6767,6 +6767,19 @@ Main components
   .overlay-panel-content {
     padding-top: 60px;
   }
+}
+.overlay-panel-sidebar {
+  height: 100%;
+  background-color: #333;
+}
+@media (min-width: 768px) {
+  .overlay-panel-sidebar {
+    position: fixed;
+    top: 60px;
+  }
+}
+.overlay-panel-sidebar p {
+  color: #fff;
 }
 /*--------------------------------
 // About Me
