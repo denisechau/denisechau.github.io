@@ -6377,22 +6377,12 @@ overlay {
 ---------------------------------*/
 .animation-element.fade-in {
   opacity: 0;
-  -webkit-transition: all 950ms linear;
-       -o-transition: all 950ms linear;
-          transition: all 950ms linear;
-  /*  -moz-transform: translate3d(100px, 0px, 0px);
-  -webkit-transform: translate3d(100px, 0px, 0px);
-  -o-transform: translate(100px, 0px);
-  -ms-transform: translate(100px, 0px);
-  transform: translate3d(0px, 5px, 0px);*/
+  -webkit-transition: all 1500ms linear;
+       -o-transition: all 1500ms linear;
+          transition: all 1500ms linear;
 }
 .animation-element.fade-in.in-view {
   opacity: 1;
-  /*  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);*/
 }
 /*animation element sliding left*/
 /*.animation-element {
@@ -6401,6 +6391,12 @@ overlay {
 }*/
 .section-spacer {
   margin: 30px 0;
+}
+/*--------------------------------
+// Case Study
+---------------------------------*/
+.row.divider + .row {
+  padding-top: 50px;
 }
 .diamond {
   position: relative;
@@ -6432,9 +6428,6 @@ overlay {
   border-top-color: white;
   transform: rotate(90deg);
 }*/
-.row.divider + .row {
-  padding-top: 50px;
-}
 @media (min-width: 768px) {
   .overlay-panel-content > .container-fluid > .row:first-of-type {
     padding-top: 50px;
@@ -6471,6 +6464,10 @@ overlay {
   font-family: "Sintony", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 22px;
   color: inherit;
+}
+.overlay-panel-content .well,
+.overlay-panel-content .panel {
+  background-color: rgba(245, 245, 245, .6);
 }
 /*--------------------------------
 // Slide In Panel
@@ -6767,19 +6764,6 @@ Main components
   .overlay-panel-content {
     padding-top: 60px;
   }
-}
-.overlay-panel-sidebar {
-  height: 100%;
-  background-color: #333;
-}
-@media (min-width: 768px) {
-  .overlay-panel-sidebar {
-    position: fixed;
-    top: 60px;
-  }
-}
-.overlay-panel-sidebar p {
-  color: #fff;
 }
 /*--------------------------------
 // About Me
