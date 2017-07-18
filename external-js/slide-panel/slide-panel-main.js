@@ -15,14 +15,25 @@
 // });
 
 $(document).ready(function($){
-	$('.msharp-content, .umap-content, .ecology-content').hide();				
+	$('.corepower-content, .msharp-content, .umap-content, .ecology-content').hide();				
 
 	//open the lateral panel
+	$('.view-corepower-case').on('click', function(event){
+		event.preventDefault();
+
+		$('.corepower-content').show();
+		$('.msharp-content, .umap-content, .ecology-content').hide;
+
+		$('.overlay-panel-content').scrollTop(0);
+		$('.overlay-panel').addClass('is-visible');
+		$('body').addClass('disable-scroll');
+	});
+
 	$('.view-msharp-case').on('click', function(event){
 		event.preventDefault();
 
 		$('.msharp-content').show();
-		$('.ecology-content, .umap-content').hide;
+		$('.corepower-content, .ecology-content, .umap-content').hide;
 
 		$('.overlay-panel-content').scrollTop(0);
 		$('.overlay-panel').addClass('is-visible');
@@ -58,7 +69,7 @@ $(document).ready(function($){
 		event.preventDefault();
 
 		$('.umap-content').show();
-		$('.ecology-content, .msharp-content').hide;
+		$('.corepower-content, .ecology-content, .msharp-content').hide;
 
 		$('.overlay-panel-content').scrollTop(0);
 		$('.overlay-panel').addClass('is-visible');
@@ -69,9 +80,9 @@ $(document).ready(function($){
 		event.preventDefault();
 
 		$('.ecology-content').show();
-		$('.umap-content, .msharp-content').hide();
+		$('.corepower-content, .umap-content, .msharp-content').hide();
 
-		$('overlay-panel-content').scrollTop(0);
+		$('.overlay-panel-content').scrollTop(0);
 		$('.overlay-panel').addClass('is-visible');
 		$('body').addClass('disable-scroll');
 	});
@@ -81,7 +92,7 @@ $(document).ready(function($){
 		if($(event.target).is('.overlay-panel') || $(event.target).is('.overlay-panel-close')) { 
 			$('.overlay-panel').removeClass('is-visible');
 			$('body').removeClass('disable-scroll');
-			$('.msharp-content, .ecology-content, .umap-content').fadeOut();				
+			$('.corepower-content, .msharp-content, .ecology-content, .umap-content').fadeOut();				
 			event.preventDefault();	
 		}
 	});
@@ -91,7 +102,7 @@ $(document).ready(function($){
 		if($(event.target).is('.overlay-panel') || $(event.target).is('.overlay-panel-return-to-work')) { 
 			$('.overlay-panel').removeClass('is-visible');
 			$('body').removeClass('disable-scroll');
-			$('.msharp-content, .ecology-content, .umap-content').fadeOut();				
+			$('.corepower-content, .msharp-content, .ecology-content, .umap-content').fadeOut();				
 			event.preventDefault();
 		}
 	});

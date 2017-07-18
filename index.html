@@ -90,6 +90,25 @@
 				<div class="section-spacer">
 					<div class="row animation-element fade-in">
 						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+							<h1>CorePower Yoga</h1>
+							<p class="lead">WIP: Redesigning CorePower Yoga's mobile experience</p>
+							<div class="row">
+								<div class="col-sm-6 col-md-7">
+									<div class="visible-xs">
+										<img src="" class="img-responsive">
+										<div class="img-credit"></div>
+									</div>
+									<button class="btn btn-lg btn-primary view-corepower-case">View Case Study</button>
+								</div>
+								<div class="hidden-xs col-sm-6 col-md-5">
+									<img src="" class="img-responsive">
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					<div class="row animation-element fade-in">
+						<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 							<h1>M-SHARP</h1>
 							<p class="lead">Training management and readiness reporting for Marine Corps aviation operations</p>
 							<div class="row">
@@ -98,7 +117,7 @@
 										<img src="images/msharp/msharp-thumbnail-sm.jpg" class="img-responsive">
 										<div class="img-credit"></div>
 									</div>
-									<p>M-SHARP is a web app designed to enable 150+ Marine Corps aviation units to manage training, manage resources, and to assess their overall combat readiness.
+									<p>M-SHARP is a web app designed to enable 150+ Marine Corps aviation units to manage training, manage resources, and assess their overall combat readiness.
 									</p> 
 									<p>Myself and one designer pioneered UX design and research practices on this team.
 									</p>
@@ -278,6 +297,20 @@
 			</header>
 
 			<div class="overlay-panel-container">
+				<div class="overlay-panel-content corepower-content">
+				<!--Corepower Yoga Case Study-->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-xl-6 col-xl-offset-3">
+								<h1>CorePower Yoga</h1>
+								<hr>
+								<p>I'm currently working on content writing for this project. Check out my prototype in the meantime.</p>
+								<iframe width="494" height="1010" src="https://invis.io/TQCMKLTG7" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div class="overlay-panel-content msharp-content">
 					<!--M-SHARP Case Study-->
 					<div class="container-fluid">
@@ -360,7 +393,7 @@
 												<li>LESS/CSS</li>
 												<li>JQuery</li>
 											</ul>
-											<p>The conditional nature of content in the system was complex, closely tied to real-world context, and had quite a learning curve. Therefore, the best way to move forward was for us to develop prototypes with deliverable HTML&CSS, and slightly less deliverable JQuery that was incorporated to express conditional content and desired interaction to the implementation team.</p>
+											<p>The conditional nature of content in the system was complex, closely tied to real-world context, and had quite a learning curve. Therefore, the best way to move forward was for us to develop prototypes with deliverable HTML and CSS, and slightly less deliverable JQuery that was incorporated to express conditional content and desired interaction to the implementation team.</p>
 										</div> <!-- cd-timeline-content -->
 									</div> <!-- cd-timeline-block -->
 
@@ -1069,7 +1102,7 @@
 			if (isPanelVisible == true) {
 				$('.overlay-panel').removeClass('is-visible');
 				$('body').removeClass('disable-scroll');
-				$('.msharp-content, .ecology-content, .umap-content').fadeOut();
+				$('.corepower-content, .msharp-content, .ecology-content, .umap-content').fadeOut();
 			}
 			event.preventDefault();	
 
