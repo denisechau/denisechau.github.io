@@ -1182,7 +1182,7 @@ h6,
 .h5,
 .h6 {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.1;
   color: #fff;
 }
@@ -6453,10 +6453,9 @@ overlay {
 .img-caption > small {
   font-size: 80%;
 }
-.panel-body-heading {
+.timeline-title {
   margin-top: 5px;
-  font-family: "Sintony", sans-serif, Arial, Helvetica;
-  font-size: 22px;
+  font-size: 20px;
   color: inherit;
 }
 .overlay-panel-content .well,
@@ -6962,7 +6961,7 @@ Main components
   -webkit-box-shadow: 0 0 0 2px #d2d2d2, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
           box-shadow: 0 0 0 2px #d2d2d2, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
 }
-.cd-timeline-content .panel-body-heading i {
+.cd-timeline-content .timeline-title i {
   color: #801a1a;
 }
 .cd-timeline-img.cd-node-dark {
