@@ -6803,7 +6803,7 @@ Main components
   left: 0;
 }
 .is-visible .overlay-panel-header {
-  top: 90px;
+  top: 80px;
   -webkit-transition: top .4s .4s;
        -o-transition: top .4s .4s;
           transition: top .4s .4s;
