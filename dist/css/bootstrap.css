@@ -3928,7 +3928,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 60px;
+  min-height: 90px;
   margin-bottom: 22px;
   border: 1px solid transparent;
 }
@@ -4036,8 +4036,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 60px;
-  padding: 19px 15px;
+  height: 90px;
+  padding: 34px 15px;
   font-size: 20px;
   line-height: 22px;
 }
@@ -4058,9 +4058,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   float: right;
   padding: 9px 10px;
-  margin-top: 13px;
+  margin-top: 28px;
   margin-right: 15px;
-  margin-bottom: 13px;
+  margin-bottom: 28px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4084,7 +4084,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 9.5px -15px;
+  margin: 17px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4123,15 +4123,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 }
 .navbar-form {
   padding: 10px 15px;
-  margin-top: 12px;
+  margin-top: 27px;
   margin-right: -15px;
-  margin-bottom: 12px;
+  margin-bottom: 27px;
   margin-left: -15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -4221,20 +4221,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .navbar-btn.btn-xs {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 .navbar-text {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -4262,34 +4262,34 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #252525;
 }
 .navbar-default .navbar-brand {
-  color: #fff;
+  color: #d8d8d8;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #e6e6e6;
+  color: #bfbfbf;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #fff;
+  color: #d8d8d8;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #d8d8d8;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #cadbea;
+  color: #fff;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #cadbea;
+  color: #fff;
   background-color: #222;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #ccc;
+  color: #d8d8d8;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
@@ -4309,49 +4309,49 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #cadbea;
+  color: #fff;
   background-color: #222;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #fff;
+    color: #d8d8d8;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #cadbea;
+    color: #fff;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #cadbea;
+    color: #fff;
     background-color: #222;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
+    color: #d8d8d8;
     background-color: transparent;
   }
 }
 .navbar-default .navbar-link {
-  color: #fff;
+  color: #d8d8d8;
 }
 .navbar-default .navbar-link:hover {
-  color: #cadbea;
+  color: #fff;
 }
 .navbar-default .btn-link {
-  color: #fff;
+  color: #d8d8d8;
 }
 .navbar-default .btn-link:hover,
 .navbar-default .btn-link:focus {
-  color: #cadbea;
+  color: #fff;
 }
 .navbar-default .btn-link[disabled]:hover,
 fieldset[disabled] .navbar-default .btn-link:hover,
 .navbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-default .btn-link:focus {
-  color: #ccc;
+  color: #d8d8d8;
 }
 .navbar-inverse {
   background-color: #222;
@@ -5706,7 +5706,9 @@ button.close {
 .modal-footer:before,
 .modal-footer:after,
 .container:before,
-.container:after {
+.container:after,
+.panel-body:before,
+.panel-body:after {
   display: table;
   content: " ";
 }
@@ -5726,7 +5728,8 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
-.container:after {
+.container:after,
+.panel-body:after {
   clear: both;
 }
 .center-block {
@@ -6159,16 +6162,22 @@ button.close {
   border-color: #252525;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #d8d8d8;
+}
+@media (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    margin-right: 10px;
+    letter-spacing: 1.2px;
+  }
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #cadbea;
+  color: #fff;
   background-color: transparent;
 }
 @media (max-width: 991px) {
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
-    color: #cadbea;
+    color: #fff;
     background-color: #222;
   }
 }
@@ -6179,14 +6188,48 @@ button.close {
   }
 }
 .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
+  color: #d8d8d8;
   background-color: transparent;
 }
 @media (min-width: 992px) {
   .navbar-default .navbar-nav > .active > a:focus {
-    color: #cadbea;
+    color: #fff;
     background-color: transparent;
   }
+}
+.panel {
+  margin-bottom: 22px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.panel-body {
+  padding: 15px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: inherit;
+}
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
 }
 .visible-xl {
   display: none !important;
@@ -6244,6 +6287,15 @@ overlay {
   left: 0;
   right: 0;
 }*/
+/*-----------
+Other
+-------------*/
+.h1,
+.h2,
+h1,
+h2 {
+  letter-spacing: 1.2px;
+}
 #intro {
   width: 100%;
   /*do not put bg att fixed, will cause issue with resizing intro bg properly, less of an issue for svg in works*/
@@ -6256,22 +6308,22 @@ overlay {
 }
 @media (max-width: 767px) {
   #intro {
-    background-position: 38% 45px;
+    background-position: 38% 75px;
   }
 }
 @media (min-width: 768px) {
   #intro {
-    background-position: 30% 45px;
+    background-position: 30% 65px;
   }
 }
 @media (min-width: 992px) {
   #intro {
-    background-position: 26% 45px;
+    background-position: 26% 65px;
   }
 }
 @media (min-width: 1199px) {
   #intro {
-    background-position: left 45px;
+    background-position: left 65px;
   }
 }
 #work,
@@ -6322,7 +6374,7 @@ overlay {
 }
 @media (max-width: 767px) {
   .vertical-offset-intro {
-    top: 60px;
+    top: 80px;
   }
   .intro-name,
   .intro-roles {
@@ -6461,6 +6513,10 @@ overlay {
 .overlay-panel-content .well,
 .overlay-panel-content .panel {
   background-color: rgba(245, 245, 245, .6);
+}
+.percentage-emphasis {
+  margin: 0 0 0 0;
+  font-size: 24px;
 }
 /*--------------------------------
 // About Me
@@ -6747,7 +6803,7 @@ Main components
   left: 0;
 }
 .is-visible .overlay-panel-header {
-  top: 60px;
+  top: 90px;
   -webkit-transition: top .4s .4s;
        -o-transition: top .4s .4s;
           transition: top .4s .4s;
@@ -6762,14 +6818,14 @@ Main components
     padding-left: 5%;
   }
   .overlay-panel-content {
-    padding-top: 110px;
+    padding-top: 130px;
   }
 }
 @media (min-width: 768px) {
   .overlay-panel-close {
     position: absolute;
     top: 18px;
-    right: 24px;
+    right: 30px;
     /* image replacement */
     display: inline-block;
     width: 50px;
@@ -6875,7 +6931,7 @@ Main components
 }
 @media (min-width: 768px) {
   .overlay-panel-content {
-    padding-top: 60px;
+    padding-top: 90px;
   }
 }
 /*Vertical Timeline Styles*/
