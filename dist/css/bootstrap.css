@@ -1181,7 +1181,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open Sans";
+  font-family: "Droid Sans";
   font-weight: 300;
   line-height: 1.1;
   color: #fff;
@@ -2796,7 +2796,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
 }
 .btn:active,
@@ -2820,27 +2820,27 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: #fff;
+  background-color: #7b7b7b;
+  border-color: #737373;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #626262;
+  border-color: #333;
 }
 .btn-default:hover {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #626262;
+  border-color: #545454;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #fff;
+  background-color: #626262;
+  border-color: #545454;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -2851,9 +2851,9 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #333;
-  background-color: #d4d4d4;
-  border-color: #8c8c8c;
+  color: #fff;
+  background-color: #505050;
+  border-color: #333;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2869,12 +2869,12 @@ fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
-  background-color: #fff;
-  border-color: #ccc;
+  background-color: #7b7b7b;
+  border-color: #737373;
 }
 .btn-default .badge {
-  color: #fff;
-  background-color: #333;
+  color: #7b7b7b;
+  background-color: #fff;
 }
 .btn-primary {
   color: #fff;
@@ -4258,8 +4258,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #333;
-  border-color: #252525;
+  background-color: #8e7878;
+  border-color: #7f6b6b;
 }
 .navbar-default .navbar-brand {
   color: #d8d8d8;
@@ -4284,7 +4284,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #222;
+  background-color: #7d6868;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4304,13 +4304,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #252525;
+  border-color: #7f6b6b;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
-  background-color: #222;
+  background-color: #7d6868;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -4325,7 +4325,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #fff;
-    background-color: #222;
+    background-color: #7d6868;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -6158,8 +6158,8 @@ button.close {
   opacity: 1.0;
 }
 .navbar-default {
-  background-color: #333;
-  border-color: #252525;
+  background-color: #8e7878;
+  border-color: #7f6b6b;
 }
 .navbar-default .navbar-nav > li > a {
   color: #d8d8d8;
@@ -6178,7 +6178,7 @@ button.close {
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
-    background-color: #222;
+    background-color: #7d6868;
   }
 }
 @media (min-width: 992px) {
@@ -6294,7 +6294,15 @@ Other
 .h2,
 h1,
 h2 {
+  color: #383535;
   letter-spacing: 1.2px;
+}
+.h1,
+h1 {
+  font-size: 40px;
+}
+hr {
+  border-top: 1px solid white;
 }
 #intro {
   width: 100%;
@@ -6328,28 +6336,24 @@ h2 {
 }
 #work,
 #resume {
-  background: #b2cae2;
-  background-image: url("../../images/pattern-blue-purple.svg");
-  background-repeat: no-repeat;
-  /*mobile doesn't support bg attachment fixed but desktop does*/
-  background-attachment: fixed;
-  background-position: 15% 0;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background: #dee1e0;
 }
 #about-me {
-  background: #99bfb3;
+  background: #2b2b2b;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #9baad1, #90bdb3);
+  background: -webkit-linear-gradient(left top, #966363, #2b2b2b);
   /* For Safari 5.1 to 6.0 */
-  background:      -o-linear-gradient(bottom right, #9baad1, #90bdb3);
+  background:      -o-linear-gradient(bottom right, #966363, #2b2b2b);
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left top, right bottom, from(#9baad1), to(#90bdb3));
-  background: -webkit-linear-gradient(top left, #9baad1, #90bdb3);
-  background:      -o-linear-gradient(top left, #9baad1, #90bdb3);
-  background:         linear-gradient(to bottom right, #9baad1, #90bdb3);
+  background: -webkit-gradient(linear, left top, right bottom, from(#966363), to(#2b2b2b));
+  background: -webkit-linear-gradient(top left, #966363, #2b2b2b);
+  background:      -o-linear-gradient(top left, #966363, #2b2b2b);
+  background:         linear-gradient(to bottom right, #966363, #2b2b2b);
   /* Standard syntax */
+}
+#about-me p {
+  color: #b79f9f;
 }
 @media (min-width: 768px) {
   .vertical-spacer {
