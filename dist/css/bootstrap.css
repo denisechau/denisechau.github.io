@@ -6414,9 +6414,6 @@ hr {
   .vertical-offset-intro {
     top: 200px;
   }
-  .intro-name {
-    font-weight: 600;
-  }
   .intro-name,
   .intro-roles {
     font-size: 6.5rem;
@@ -6425,9 +6422,6 @@ hr {
 @media (min-width: 1400px) {
   .vertical-offset-intro {
     top: 270px;
-  }
-  .intro-name {
-    font-weight: 600;
   }
   .intro-name,
   .intro-roles {
